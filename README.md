@@ -14,6 +14,7 @@ Add this to your `.pre-commit-config.yaml`
         - id: go-fmt
         - id: validate-toml
         - id: go-unit-tests
+	- id: go-build
 
 ### Available hooks
 
