@@ -15,6 +15,7 @@ Add this to your `.pre-commit-config.yaml`
         - id: validate-toml
         - id: go-unit-tests
 	- id: go-build
+	- id: revive
 
 ### Available hooks
 
@@ -23,6 +24,7 @@ Add this to your `.pre-commit-config.yaml`
    https://github.com/BurntSushi/toml/tree/master/cmd/tomlv
 - `go-unit-tests` - run `go test -tags=unit -timeout 30s -short -v`
 - `go-build` - run `go build`, requires golang
+- `revive` - run `revive -config defaults.toml --formatter friendly ./...`, requires [revive](https://github.com/mgechev/revive)
 
 ### NOTICE
 
