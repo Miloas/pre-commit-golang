@@ -31,3 +31,9 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go build`, requires golang"
+-   id: revive
+    name: 'revive'
+    entry: run-revive.sh
+    language: 'script'
+    pass_filenames: false
+    description: "Runs `revive`, requires https://github.com/mgechev/revive"
