@@ -1,0 +1,33 @@
+-   id: go-fmt
+    name: 'go fmt'
+    entry: run-go-fmt.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `gofmt`, requires golang"
+-   id: validate-toml
+    name: 'validate toml'
+    entry: 'tomlv'
+    files: '\.toml$'
+    language: 'system'
+    description: >
+      Runs `tomlv`, requires https://github.com/BurntSushi/toml/tree/master/cmd/tomlv"
+-   id: 'no-go-testing'
+    name: "Check files aren't using go's testing package"
+    entry: 'testing\.T'
+    files: 'test_.*\.go$'
+    language: 'pygrep'
+    description: >
+      Checks that no files are using `testing.T`, if you want developers to use
+      a different testing framework
+-   id: go-unit-tests
+    name: 'go-unit-tests'
+    entry: run-go-unit-tests.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go test`"
+-   id: go-build
+    name: 'go-build'
+    entry: run-go-build.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go build`, requires golang"
