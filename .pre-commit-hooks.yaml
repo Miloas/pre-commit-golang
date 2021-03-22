@@ -37,3 +37,9 @@
     language: 'script'
     pass_filenames: false
     description: "Runs `revive`, requires https://github.com/mgechev/revive"
+-   id: go-mod-tidy
+    name: 'go-mod-tidy'
+    entry: run-go-mod-tidy.sh
+    files: '\.go$'
+    language: 'script'
+    description: "Runs `go mod tidy -v`, requires golang"
