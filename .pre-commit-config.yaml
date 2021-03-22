@@ -1,5 +1,5 @@
 -   repo: git://github.com/pre-commit/pre-commit-hooks
-    rev: v2.4.0
+    rev: v3.4.0
     hooks:
       -   id: check-merge-conflict
       -   id: check-yaml

@@ -15,6 +15,7 @@ Add this to your `.pre-commit-config.yaml`
         - id: validate-toml
         - id: go-unit-tests
         - id: go-build
+        - id: go-mod-tidy
         - id: revive
 
 ### Available hooks
