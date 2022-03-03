@@ -43,3 +43,9 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go mod tidy -v`, requires golang"
+-   id: buf 
+    name: 'buf'
+    entry: run-buf.sh
+    language: 'script'
+    pass_filenames: false
+    description: "Runs `buf lint`, requires https://github.com/bufbuild/buf"
